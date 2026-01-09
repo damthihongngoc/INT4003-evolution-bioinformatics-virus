@@ -1,0 +1,16 @@
+
+*.log
+*.ckp.gz
+*.ckp
+*.bionj
+*.mldist
+*.model.gz
+*.rate
+*.sitefreq
+*.splits.nex
+
+*.tmp
+*.temp
+*.bak
+.DS_Store
+Thumbs.db

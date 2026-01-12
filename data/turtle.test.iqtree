@@ -1,0 +1,169 @@
+IQ-TREE 3.0.1 built May  5 2025
+
+Partition file name: turtle.merge.best_scheme.nex
+Input file name: turtle.fa
+Type of analysis: ModelFinder + tree reconstruction
+Random seed number: 689497
+
+REFERENCES
+----------
+
+To cite IQ-TREE 3 please use:
+
+Thomas K.F. Wong, Nhan Ly-Trong, Huaiyan Ren, Hector Banos, Andrew J. Roger,
+Edward Susko, Chris Bielow, Nicola De Maio, Nick Goldman, Matthew W. Hahn,
+Gavin Huttley, Robert Lanfear, Bui Quang Minh (2025)
+IQ-TREE 3: Phylogenomic Inference Software using Complex Evolutionary Models.
+Submitted.
+
+Please also cite the following paper(s) for the feature(s) that you used:
+
+To cite ModelFinder please use: 
+
+Subha Kalyaanamoorthy, Bui Quang Minh, Thomas KF Wong, Arndt von Haeseler,
+and Lars S Jermiin (2017) ModelFinder: Fast model selection for
+accurate phylogenetic estimates. Nature Methods, 14:587–589.
+https://doi.org/10.1038/nmeth.4285
+
+Since you used partition models please also cite:
+
+Olga Chernomor, Arndt von Haeseler, and Bui Quang Minh (2016)
+Terrace aware data structure for phylogenomic inference from
+supermatrices. Syst. Biol., 65:997-1008.
+https://doi.org/10.1093/sysbio/syw037
+
+SEQUENCE ALIGNMENT
+------------------
+
+Input data: 16 taxa with 8 partitions and 20820 total sites (4.88563% missing data)
+
+  ID	Type	Seq	Site	Unique	Infor	Invar	Const	Name
+   1	DNA	15	2628	1373	927	1134	1134	ENSGALG00000000223.macse_DNA_gb_ENSGALG00000001529.macse_DNA_gb_ENSGALG00000008338.macse_DNA_gb_ENSGALG00000011966.macse_DNA_gb
+   2	DNA	16	6261	2468	1682	3476	3476	ENSGALG00000002002.macse_DNA_gb_ENSGALG00000003700.macse_DNA_gb_ENSGALG00000003702.macse_DNA_gb_ENSGALG00000005820.macse_DNA_gb_ENSGALG00000008517.macse_DNA_gb_ENSGALG00000009085.macse_DNA_gb_ENSGALG00000012379.macse_DNA_gb_ENSGALG00000015397.macse_DNA_gb
+   3	DNA	16	4698	2295	1585	2321	2321	ENSGALG00000002514.macse_DNA_gb_ENSGALG00000003907.macse_DNA_gb_ENSGALG00000009879.macse_DNA_gb_ENSGALG00000011323.macse_DNA_gb_ENSGALG00000012244.macse_DNA_gb_ENSGALG00000014038.macse_DNA_gb_ENSGALG00000016241.macse_DNA_gb
+   4	DNA	16	1959	916	745	1029	1029	ENSGALG00000003337.macse_DNA_gb_ENSGALG00000008916.macse_DNA_gb_ENSGALG00000011434.macse_DNA_gb
+   5	DNA	15	2979	915	580	1957	1957	ENSGALG00000005834.macse_DNA_gb_ENSGALG00000011917.macse_DNA_gb_ENSGALG00000013227.macse_DNA_gb
+   6	DNA	13	1200	432	282	716	716	ENSGALG00000005902.macse_DNA_gb_ENSGALG00000012568.macse_DNA_gb
+   7	DNA	9	498	166	96	314	314	ENSGALG00000014648.macse_DNA_gb
+   8	DNA	10	597	289	187	238	238	ENSGALG00000015326.macse_DNA_gb
+
+Column meanings:
+  Unique: Number of unique site patterns
+  Infor:  Number of parsimony-informative sites
+  Invar:  Number of invariant sites
+  Const:  Number of constant sites (can be subset of invariant sites)
+
+SUBSTITUTION PROCESS
+--------------------
+
+Edge-linked-proportional partition model with separate substitution models and separate rates across sites
+
+  ID  Model           Speed  Parameters
+   1  TN+F+I+R2      1.2094  TN{3.32592,4.32632}+F{0.271546,0.257018,0.233992,0.237444}+I{0.33862}+R2{0.531577,0.98466,0.129803,3.67156}
+   2  GTR+F+I+G4     0.9036  GTR{1.81422,4.54913,1.19435,1.15917,8.73787}+F{0.323525,0.197784,0.232101,0.24659}+I{0.363295}+G4{1.16408}
+   3  GTR+F+I+G4     1.1569  GTR{1.99233,5.15001,1.21556,1.27065,6.35162}+F{0.277326,0.208164,0.229333,0.285177}+I{0.343606}+G4{1.27123}
+   4  TVM+F+I+G4     1.4560  TVM{3.70672,11.8265,2.66599,2.42071}+F{0.270408,0.24054,0.254174,0.234877}+I{0.442948}+G4{1.25216}
+   5  TIM2+F+G4      0.6004  TIM2{1.96371,5.97248,9.503}+F{0.305276,0.200465,0.239131,0.255128}+G4{0.259955}
+   6  TN+F+G4        0.7341  TN{2.64906,5.9549}+F{0.286981,0.235232,0.255931,0.221856}+G4{0.364012}
+   7  TN+F+G4        0.6501  TN{2.61996,8.24884}+F{0.38736,0.119747,0.246559,0.246333}+G4{0.358608}
+   8  TIM+F+G4       1.1778  TIM{3.28304,2.23844,7.19512}+F{0.290433,0.22574,0.31016,0.173666}+G4{0.816177}
+
+STARTING TREE
+-------------
+
+Log-likelihood of the tree: -115748.2701 (s.e. 649.9371)
+Unconstrained log-likelihood (without tree): -126717.6776
+Number of free parameters (#branches + #model parameters): 99
+Akaike information criterion (AIC) score: 231694.5403
+Corrected Akaike information criterion (AICc) score: 231695.4959
+Bayesian information criterion (BIC) score: 232480.9635
+
+Mixture-based log-likelihood of the tree: -118116.7090
+Marginal Akaike information criterion (mAIC) score: 236431.4181
+
+Total tree length (sum of branch lengths): 1.9458
+Sum of internal branch lengths: 0.5373 (27.6148% of tree length)
+
+NOTE: Tree is UNROOTED although outgroup taxon 'protopterus' is drawn at root
+
++---------------------------------------------------------protopterus
+|
+|                                          +----------------Anolis
+|                                       +--|
+|                                       |  +---------podarcis
+|                      +----------------|
+|                      |                +-----------------python
+|                +-----|
+|                |     |               +--------Gallus
+|                |     |  +------------|
+|                |     |  |            +-----------Taeniopygia
+|                |     +--|
+|                |        |              +--alligator
+|                |        |  +-----------|
+|                |        |  |           +--caiman
+|                |        +--|
+|                |           |           +--emys_orbicularis
+|                |           |        +--|
+|                |           |        |  +--chelonoidis_nigra
+|                |           |     +--|
+|                |           |     |  +--caretta
+|                |           +-----|
+|                |                 +---phrynops
++----------------|
+|                |              +-------------------Homo
+|                |         +----|
+|                |         |    +--------------------Monodelphis
+|                +---------|
+|                          +-----------------------Ornithorhynchus
+|
++---------------------------------------------------------Xenopus
+
+Tree in newick format:
+
+(protopterus:0.3103065529,((((Anolis:0.0910545213,podarcis:0.0552318375):0.0037265695,python:0.0975334313):0.0931797342,((Gallus:0.0483923784,Taeniopygia:0.0655551918):0.0695198328,((alligator:0.0040218848,caiman:0.0136851414):0.0682289887,(((emys_orbicularis:0.0068268089,chelonoidis_nigra:0.0122673484):0.0030805970,caretta:0.0110475605):0.0106470927,phrynops:0.0260956405):0.0373551669):0.0190759968):0.0148817024):0.0367120810,((Homo:0.1078328691,Monodelphis:0.1137682766):0.0307954392,Ornithorhynchus:0.1317538413):0.0569158029):0.0931993753,Xenopus:0.3130725344);
+
+
+USER TREES
+----------
+
+See turtle.test.trees for trees with branch lengths.
+
+Tree      logL    deltaL  bp-RELL    p-KH     p-SH       c-ELW       p-AU
+-------------------------------------------------------------------------
+  1 -115748.2702  2.5859   0.463 +  0.467 +  0.467 +     0.464 +    0.466 + 
+  2 -115745.6843       0   0.537 +  0.533 +      1 +     0.536 +    0.534 + 
+
+deltaL  : logL difference from the maximal logl in the set.
+bp-RELL : bootstrap proportion using RELL method (Kishino et al. 1990).
+p-KH    : p-value of one sided Kishino-Hasegawa test (1989).
+p-SH    : p-value of Shimodaira-Hasegawa test (2000).
+c-ELW   : Expected Likelihood Weight (Strimmer & Rambaut 2002).
+p-AU    : p-value of approximately unbiased (AU) test (Shimodaira, 2002).
+
+Plus signs denote the 95% confidence sets.
+Minus signs denote significant exclusion.
+All tests performed 10000 resamplings using the RELL method.
+
+ALISIM COMMAND
+--------------
+To simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis, you can use the following command:
+
+--alisim simulated_MSA -t turtle.test.treefile -p turtle.test.best_model.nex
+
+To mimic the alignment used to produce this analysis, i.e. simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis *and* copying the same gap positions as the original alignment, you can use the following command:
+
+iqtree -s turtle.fa --alisim mimicked_MSA
+
+To simulate any number of alignments in either of the two commandlines above, use the --num-alignments options, for example mimic 100 alignments you would use the command line:
+
+iqtree -s turtle.fa --alisim mimicked_MSA --num-alignments 100
+
+For more information on using AliSim, please visit: www.iqtree.org/doc/AliSim
+
+TIME STAMP
+----------
+
+Date and time: Fri Jan 09 20:23:00 2026
+Total CPU time used: 21 seconds (0h:0m:21s)
+Total wall-clock time used: 100 seconds (0h:1m:40s)
+

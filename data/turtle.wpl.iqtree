@@ -1,0 +1,201 @@
+IQ-TREE 3.0.1 built May  5 2025
+
+Partition file name: turtle.nex.best_scheme.nex
+Input file name: turtle.fa
+Type of analysis: ModelFinder + tree reconstruction
+Random seed number: 727319
+
+REFERENCES
+----------
+
+To cite IQ-TREE 3 please use:
+
+Thomas K.F. Wong, Nhan Ly-Trong, Huaiyan Ren, Hector Banos, Andrew J. Roger,
+Edward Susko, Chris Bielow, Nicola De Maio, Nick Goldman, Matthew W. Hahn,
+Gavin Huttley, Robert Lanfear, Bui Quang Minh (2025)
+IQ-TREE 3: Phylogenomic Inference Software using Complex Evolutionary Models.
+Submitted.
+
+Please also cite the following paper(s) for the feature(s) that you used:
+
+To cite ModelFinder please use: 
+
+Subha Kalyaanamoorthy, Bui Quang Minh, Thomas KF Wong, Arndt von Haeseler,
+and Lars S Jermiin (2017) ModelFinder: Fast model selection for
+accurate phylogenetic estimates. Nature Methods, 14:587–589.
+https://doi.org/10.1038/nmeth.4285
+
+Since you used partition models please also cite:
+
+Olga Chernomor, Arndt von Haeseler, and Bui Quang Minh (2016)
+Terrace aware data structure for phylogenomic inference from
+supermatrices. Syst. Biol., 65:997-1008.
+https://doi.org/10.1093/sysbio/syw037
+
+SEQUENCE ALIGNMENT
+------------------
+
+Input data: 16 taxa with 29 partitions and 20820 total sites (27.6216% missing data)
+
+  ID	Type	Seq	Site	Unique	Infor	Invar	Const	Name
+   1	DNA	11	846	427	282	382	382	ENSGALG00000000223.macse_DNA_gb
+   2	DNA	10	522	281	193	227	227	ENSGALG00000001529.macse_DNA_gb
+   3	DNA	10	672	264	194	351	351	ENSGALG00000002002.macse_DNA_gb
+   4	DNA	14	732	326	222	422	422	ENSGALG00000002514.macse_DNA_gb
+   5	DNA	15	966	419	313	556	556	ENSGALG00000003337.macse_DNA_gb
+   6	DNA	14	885	363	257	525	525	ENSGALG00000003700.macse_DNA_gb
+   7	DNA	10	1545	572	359	833	833	ENSGALG00000003702.macse_DNA_gb
+   8	DNA	12	480	262	176	225	225	ENSGALG00000003907.macse_DNA_gb
+   9	DNA	12	576	259	176	318	318	ENSGALG00000005820.macse_DNA_gb
+  10	DNA	15	696	232	129	483	483	ENSGALG00000005834.macse_DNA_gb
+  11	DNA	13	570	201	124	334	334	ENSGALG00000005902.macse_DNA_gb
+  12	DNA	12	792	437	283	334	334	ENSGALG00000008338.macse_DNA_gb
+  13	DNA	11	540	190	129	329	329	ENSGALG00000008517.macse_DNA_gb
+  14	DNA	12	546	257	231	262	262	ENSGALG00000008916.macse_DNA_gb
+  15	DNA	11	930	366	243	547	547	ENSGALG00000009085.macse_DNA_gb
+  16	DNA	13	597	344	239	261	261	ENSGALG00000009879.macse_DNA_gb
+  17	DNA	9	900	434	290	406	406	ENSGALG00000011323.macse_DNA_gb
+  18	DNA	10	447	240	201	211	211	ENSGALG00000011434.macse_DNA_gb
+  19	DNA	12	981	268	172	659	659	ENSGALG00000011917.macse_DNA_gb
+  20	DNA	10	468	228	169	191	191	ENSGALG00000011966.macse_DNA_gb
+  21	DNA	13	753	339	233	387	387	ENSGALG00000012244.macse_DNA_gb
+  22	DNA	13	519	225	149	292	292	ENSGALG00000012379.macse_DNA_gb
+  23	DNA	9	630	231	158	382	382	ENSGALG00000012568.macse_DNA_gb
+  24	DNA	10	1302	415	279	815	815	ENSGALG00000013227.macse_DNA_gb
+  25	DNA	11	561	242	176	297	297	ENSGALG00000014038.macse_DNA_gb
+  26	DNA	9	498	166	96	314	314	ENSGALG00000014648.macse_DNA_gb
+  27	DNA	10	597	289	187	238	238	ENSGALG00000015326.macse_DNA_gb
+  28	DNA	12	594	272	175	281	281	ENSGALG00000015397.macse_DNA_gb
+  29	DNA	13	675	348	249	323	323	ENSGALG00000016241.macse_DNA_gb
+
+Column meanings:
+  Unique: Number of unique site patterns
+  Infor:  Number of parsimony-informative sites
+  Invar:  Number of invariant sites
+  Const:  Number of constant sites (can be subset of invariant sites)
+
+SUBSTITUTION PROCESS
+--------------------
+
+Edge-linked-proportional partition model with separate substitution models and separate rates across sites
+
+  ID  Model           Speed  Parameters
+   1  HKY+F+I+G4     1.0944  HKY{4.08115}+F{0.268044,0.242621,0.236049,0.253286}+I{0.289808}+G4{1.585}
+   2  TPM2+G4        1.3045  TPM2{1.70982,5.18891}+FQ+G4{0.518997}
+   3  TN+F+G4        1.0945  TN{3.09035,6.96578}+F{0.295014,0.228957,0.281428,0.194602}+G4{0.408512}
+   4  TVM+F+I+G4     1.0611  TVM{2.1445,4.83639,0.904613,0.413549}+F{0.303011,0.189302,0.257314,0.250374}+I{0.411799}+G4{0.741598}
+   5  TIM2+F+I+G4    1.2550  TIM2{1.98545,5.96757,10.6966}+F{0.257628,0.244857,0.264434,0.233081}+I{0.460485}+G4{0.827593}
+   6  TIM2+F+G4      0.7603  TIM2{1.88158,6.8001,15.1742}+F{0.356823,0.17346,0.217723,0.251994}+G4{0.28526}
+   7  TN+F+G4        0.8779  TN{2.96736,4.43348}+F{0.323437,0.223237,0.22713,0.226196}+G4{0.49081}
+   8  HKY+F+I+G4     1.1147  HKY{3.67583}+F{0.279684,0.195691,0.232152,0.292474}+I{0.381156}+G4{3.2406}
+   9  TN+F+I         0.7732  TN{3.70636,6.40176}+F{0.286601,0.210895,0.23517,0.267333}+I{0.503451}
+  10  TIM2+F+I+G4    0.4806  TIM2{2.909,8.09636,14.8615}+F{0.295667,0.198,0.253222,0.253111}+I{0.501006}+G4{0.845295}
+  11  TNe+G4         0.6492  TNe{3.06779,5.85079}+FQ+G4{0.382304}
+  12  TPM3u+F+G4     1.0536  TPM3u{1.30278,4.03469}+F{0.269385,0.270664,0.235439,0.224512}+G4{0.649594}
+  13  TPM2u+F+G4     0.6993  TPM2u{2.36128,9.56917}+F{0.342677,0.177049,0.207318,0.272957}+G4{0.281207}
+  14  TPM2u+F+I+G4   1.5658  TPM2u{2.12741,7.79055}+F{0.334107,0.216225,0.227083,0.222585}+I{0.409755}+G4{1.90521}
+  15  TIM2+F+I+R2    1.1950  TIM2{1.76366,5.79214,14.1466}+F{0.31525,0.19341,0.23719,0.25415}+I{0.513186}+R2{0.429751,1.20036,0.0570637,8.4843}
+  16  TN+F+I+G4      1.2022  TN{4.4216,2.90437}+F{0.211475,0.222482,0.208311,0.357731}+I{0.311393}+G4{1.60921}
+  17  TPM3u+F+I+G4   1.2871  TPM3u{1.61363,5.55859}+F{0.30222,0.20623,0.229733,0.261817}+I{0.286351}+G4{1.62119}
+  18  TPM3u+F+I+G4   1.7129  TPM3u{2.88348,7.17805}+F{0.213977,0.263784,0.263552,0.258687}+I{0.400279}+G4{1.84369}
+  19  TIM3+F+G4      0.6068  TIM3{2.27758,4.54148,10.4102}+F{0.3005,0.191738,0.266272,0.24149}+G4{0.246422}
+  20  K2P+G4         1.3016  K2P{3.85259}+FQ+G4{0.655798}
+  21  GTR+F+G4       1.1511  GTR{4.64839,6.32187,1.19207,2.09089,11.9024}+F{0.272249,0.222223,0.231308,0.27422}+G4{0.409271}
+  22  TN+F+G4        0.9684  TN{4.02461,7.80745}+F{0.326198,0.183342,0.236544,0.253917}+G4{0.325001}
+  23  TN+F+G4        0.8220  TN{2.85805,5.1297}+F{0.25028,0.259237,0.270061,0.220422}+G4{0.335449}
+  24  TPM2u+F+G4     0.6900  TPM2u{1.7198,7.22214}+F{0.317783,0.211166,0.200889,0.270163}+G4{0.31343}
+  25  TN+F+G4        0.9140  TN{3.29349,6.32683}+F{0.310462,0.1884,0.210667,0.290471}+G4{0.35786}
+  26  TN+F+G4        0.6427  TN{2.61979,8.25327}+F{0.38736,0.119747,0.246559,0.246333}+G4{0.358532}
+  27  TIM+F+G4       1.1658  TIM{3.28288,2.23934,7.19926}+F{0.290433,0.22574,0.31016,0.173666}+G4{0.815707}
+  28  TIM2+F+G4      0.9893  TIM2{1.69145,4.53669,9.28611}+F{0.321114,0.186001,0.227397,0.265488}+G4{0.547548}
+  29  TPM2+I+G4      1.2563  TPM2{2.0876,7.6362}+FQ+I{0.380198}+G4{1.77673}
+
+STARTING TREE
+-------------
+
+Log-likelihood of the tree: -115448.5381 (s.e. 649.4874)
+Unconstrained log-likelihood (without tree): -96087.9311
+Number of free parameters (#branches + #model parameters): 240
+Akaike information criterion (AIC) score: 231377.0763
+Corrected Akaike information criterion (AICc) score: 231382.6976
+Bayesian information criterion (BIC) score: 233283.5569
+
+Mixture-based log-likelihood of the tree: -135086.7759
+Marginal Akaike information criterion (mAIC) score: 270653.5518
+
+Total tree length (sum of branch lengths): 1.9911
+Sum of internal branch lengths: 0.5457 (27.4068% of tree length)
+
+NOTE: Tree is UNROOTED although outgroup taxon 'protopterus' is drawn at root
+
++----------------------------------------------------------protopterus
+|
+|                                         +---------------Anolis
+|                                      +--|
+|                                      |  +---------podarcis
+|                      +---------------|
+|                      |               +----------------python
+|                +-----|
+|                |     |              +-------Gallus
+|                |     |  +-----------|
+|                |     |  |           +----------Taeniopygia
+|                |     +--|
+|                |        |              +--alligator
+|                |        |  +-----------|
+|                |        |  |           +--caiman
+|                |        +--|
+|                |           |           +--emys_orbicularis
+|                |           |        +--|
+|                |           |        |  +--chelonoidis_nigra
+|                |           |     +--|
+|                |           |     |  +--caretta
+|                |           +-----|
+|                |                 +---phrynops
++----------------|
+|                |              +------------------Homo
+|                |         +----|
+|                |         |    +-------------------Monodelphis
+|                +---------|
+|                          +----------------------Ornithorhynchus
+|
++------------------------------------------------------Xenopus
+
+Tree in newick format:
+
+(protopterus:0.3367977656,((((Anolis:0.0914987324,podarcis:0.0572418475):0.0034222940,python:0.0989725211):0.0942655255,((Gallus:0.0484468737,Taeniopygia:0.0665071506):0.0709055310,((alligator:0.0046721641,caiman:0.0126377571):0.0703964761,(((emys_orbicularis:0.0069717875,chelonoidis_nigra:0.0121516813):0.0032081710,caretta:0.0110426841):0.0107717279,phrynops:0.0265369111):0.0367961213):0.0188551084):0.0149548990):0.0375907858,((Homo:0.1088245721,Monodelphis:0.1147606185):0.0300082036,Ornithorhynchus:0.1341056031):0.0581085574):0.0964016977,Xenopus:0.3142020554);
+
+
+USER TREES
+----------
+
+See turtle.wpl.trees for trees with branch lengths.
+
+Tree      logL    deltaL
+-------------------------
+  1 -115448.5383  12.047
+  2 -115436.4916       0
+
+
+ALISIM COMMAND
+--------------
+To simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis, you can use the following command:
+
+--alisim simulated_MSA -t turtle.wpl.treefile -p turtle.wpl.best_model.nex
+
+To mimic the alignment used to produce this analysis, i.e. simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis *and* copying the same gap positions as the original alignment, you can use the following command:
+
+iqtree -s turtle.fa --alisim mimicked_MSA
+
+To simulate any number of alignments in either of the two commandlines above, use the --num-alignments options, for example mimic 100 alignments you would use the command line:
+
+iqtree -s turtle.fa --alisim mimicked_MSA --num-alignments 100
+
+For more information on using AliSim, please visit: www.iqtree.org/doc/AliSim
+
+TIME STAMP
+----------
+
+Date and time: Sun Jan 11 20:26:49 2026
+Total CPU time used: 7.4844 seconds (0h:0m:7s)
+Total wall-clock time used: 12.016 seconds (0h:0m:12s)
+

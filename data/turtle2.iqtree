@@ -1,0 +1,167 @@
+IQ-TREE 3.0.1 built May  5 2025
+
+Input file name: turtle.fa
+Type of analysis: tree reconstruction + ultrafast bootstrap (1000 replicates)
+Random seed number: 928958
+
+REFERENCES
+----------
+
+To cite IQ-TREE 3 please use:
+
+Thomas K.F. Wong, Nhan Ly-Trong, Huaiyan Ren, Hector Banos, Andrew J. Roger,
+Edward Susko, Chris Bielow, Nicola De Maio, Nick Goldman, Matthew W. Hahn,
+Gavin Huttley, Robert Lanfear, Bui Quang Minh (2025)
+IQ-TREE 3: Phylogenomic Inference Software using Complex Evolutionary Models.
+Submitted.
+
+Please also cite the following paper(s) for the feature(s) that you used:
+
+Since you used ultrafast bootstrap (UFBoot) please also cite: 
+
+Diep Thi Hoang, Olga Chernomor, Arndt von Haeseler, Bui Quang Minh,
+and Le Sy Vinh (2018) UFBoot2: Improving the ultrafast bootstrap
+approximation. Mol. Biol. Evol., 35:518–522.
+https://doi.org/10.1093/molbev/msx281
+
+SEQUENCE ALIGNMENT
+------------------
+
+Input data: 16 sequences with 20820 nucleotide sites
+Number of constant sites: 11185 (= 53.7224% of all sites)
+Number of invariant (constant or ambiguous constant) sites: 11185 (= 53.7224% of all sites)
+Number of parsimony informative sites: 6084
+Number of distinct site patterns: 8574
+
+SUBSTITUTION PROCESS
+--------------------
+
+Mixture model of substitution: MIX{GTR+FO,GTR+FO}+I+R3
+
+  No  Component      Rate    Weight   Parameters
+   1  GTR           1.0000   0.5488   GTR{1.49915,4.2262,1.32577,1.41184,2.59913}+FO{0.370758,0.137812,0.311474,0.179955}
+   2  GTR           1.0000   0.4512   GTR{2.53895,0.841911,0.870981,1.80622,10.8208}+FO{0.207804,0.316551,0.141727,0.333917}
+
+Model of rate heterogeneity: Invar+FreeRate with 3 categories
+Proportion of invariable sites: 0.3769
+Site proportion and rates:  (0.2718,0.4260) (0.2831,1.7214) (0.0682,5.8196)
+
+ Category  Relative_rate  Proportion
+  0         0              0.3769
+  1         0.4260         0.2718
+  2         1.7214         0.2831
+  3         5.8196         0.0682
+
+MAXIMUM LIKELIHOOD TREE
+-----------------------
+
+Log-likelihood of the tree: -115618.9303 (s.e. 647.4792)
+Unconstrained log-likelihood (without tree): -160890.2582
+Number of free parameters (#branches + #model parameters): 51
+Akaike information criterion (AIC) score: 231339.8605
+Corrected Akaike information criterion (AICc) score: 231340.1159
+Bayesian information criterion (BIC) score: 231744.9877
+
+Total tree length (sum of branch lengths): 2.3176
+Sum of internal branch lengths: 0.6137 (26.4789% of tree length)
+
+NOTE: Tree is UNROOTED although outgroup taxon 'protopterus' is drawn at root
+Numbers in parentheses are  ultrafast bootstrap support (%)
+
++----------------------------------------------------------protopterus
+|
+|                                       +--------------Anolis
+|                                    +--| (57)
+|                                    |  +--------podarcis
+|                    +---------------| (100)
+|                    |               +---------------python
+|              +-----| (100)
+|              |     |             +------Gallus
+|              |     |  +----------| (100)
+|              |     |  |          +---------Taeniopygia
+|              |     +--| (96)
+|              |        |             +--alligator
+|              |        |  +----------| (100)
+|              |        |  |          +--caiman
+|              |        +--| (81)
+|              |           |           +--emys_orbicularis
+|              |           |        +--| (95)
+|              |           |        |  +--chelonoidis_nigra
+|              |           |     +--| (100)
+|              |           |     |  +--caretta
+|              |           +-----| (100)
+|              |                 +---phrynops
++--------------| (100)
+|              |             +-----------------Homo
+|              |         +---| (100)
+|              |         |   +------------------Monodelphis
+|              +---------| (100)
+|                        +---------------------Ornithorhynchus
+|
++-----------------------------------------------------------Xenopus
+
+Tree in newick format:
+
+(protopterus:0.4035340288,((((Anolis:0.1058176635,podarcis:0.0613620095)57:0.0035282040,python:0.1121249286)100:0.1137536715,((Gallus:0.0519360259,Taeniopygia:0.0724126364)100:0.0796016437,((alligator:0.0032872719,caiman:0.0140922043)100:0.0787547922,(((emys_orbicularis:0.0076521854,chelonoidis_nigra:0.0126954963)95:0.0033066261,caretta:0.0109739405)100:0.0108626238,phrynops:0.0289621348)100:0.0412434331)81:0.0231434220)96:0.0141934130)100:0.0413446673,((Homo:0.1243626583,Monodelphis:0.1326751738)100:0.0324318128,Ornithorhynchus:0.1543110289)100:0.0692450348)100:0.1022743645,Xenopus:0.4077527013);
+
+CONSENSUS TREE
+--------------
+
+Consensus tree is constructed from 1000 bootstrap trees
+Log-likelihood of consensus tree: -115618.928356
+Robinson-Foulds distance between ML tree and consensus tree: 0
+
+Branches with support >0.000000% are kept (extended consensus)
+Branch lengths are optimized by maximum likelihood on original alignment
+Numbers in parentheses are bootstrap supports (%)
+
++----------------------------------------------------------protopterus
+|
+|                                       +--------------Anolis
+|                                    +--| (57)
+|                                    |  +--------podarcis
+|                    +---------------| (100)
+|                    |               +---------------python
+|              +-----| (100)
+|              |     |             +------Gallus
+|              |     |  +----------| (100)
+|              |     |  |          +---------Taeniopygia
+|              |     +--| (96)
+|              |        |             +--alligator
+|              |        |  +----------| (100)
+|              |        |  |          +--caiman
+|              |        +--| (81)
+|              |           |           +--emys_orbicularis
+|              |           |        +--| (95)
+|              |           |        |  +--chelonoidis_nigra
+|              |           |     +--| (100)
+|              |           |     |  +--caretta
+|              |           +-----| (100)
+|              |                 +---phrynops
++--------------| (100)
+|              |             +-----------------Homo
+|              |         +---| (100)
+|              |         |   +------------------Monodelphis
+|              +---------| (100)
+|                        +---------------------Ornithorhynchus
+|
++-----------------------------------------------------------Xenopus
+
+
+Consensus tree in newick format: 
+
+(protopterus:0.4040031317,((((Anolis:0.1059490417,podarcis:0.0614192629)57:0.0034910103,python:0.1122324460)100:0.1138564241,((Gallus:0.0519735000,Taeniopygia:0.0724871454)100:0.0796832339,((alligator:0.0032858251,caiman:0.0141214547)100:0.0788151421,(((emys_orbicularis:0.0076569258,chelonoidis_nigra:0.0127060979)95:0.0033089570,caretta:0.0109809525)100:0.0108652475,phrynops:0.0289924120)100:0.0412767282)81:0.0231589242)96:0.0141891625)100:0.0413495921,((Homo:0.1244464378,Monodelphis:0.1327728132)100:0.0324409717,Ornithorhynchus:0.1544280773)100:0.0693157011)100:0.1022522576,Xenopus:0.4082538701);
+
+ALISIM COMMAND
+--------------
+Currently, we only support exporting AliSim commands automatically from the analysis for common models of DNA, Protein, Binary, and Morphological data. To simulate data from other models (mixture, lie-markov, etc), please refer to the User Manual of AliSim. Thanks!
+
+For more information on using AliSim, please visit: www.iqtree.org/doc/AliSim
+
+TIME STAMP
+----------
+
+Date and time: Tue Jan 13 10:15:46 2026
+Total CPU time used: 387.875 seconds (0h:6m:27s)
+Total wall-clock time used: 199.5978602 seconds (0h:3m:19s)
+

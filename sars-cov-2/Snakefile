@@ -66,15 +66,14 @@ rule step5_test:
 rule step6_mast:
     input:
         fa="data/{name}.fa",
-        trees="results/step5_test/{name}.trees",
-        scheme="results/step4_merge/{name}.merge.best_scheme.nex"
+        trees="results/step5_test/{name}.trees"
     output:
         "results/step6_mast/{name}.mix.iqtree"
     shell:
         """
-        iqtree3 -s {input.fa} -p {input.scheme} -te {input.trees} -n 0 \
-        --prefix results/step6_mast/{wildcards.name}.mix
+        iqtree3 -s {input.fa} -te {input.trees} -m GTR+F+R4+T -n 0  -T AUTO  --prefix results/step6_mast/{wildcards.name}.mix
         """
+
 rule step7_wpl:
     input:
         fa="data/{name}.fa",

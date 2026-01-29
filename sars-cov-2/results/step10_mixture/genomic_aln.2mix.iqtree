@@ -1,0 +1,195 @@
+IQ-TREE 3.0.1 built May  5 2025
+
+Input file name: data/genomic_aln.fa
+Type of analysis: tree reconstruction + ultrafast bootstrap (1000 replicates)
+Random seed number: 180129
+
+REFERENCES
+----------
+
+To cite IQ-TREE 3 please use:
+
+Thomas K.F. Wong, Nhan Ly-Trong, Huaiyan Ren, Hector Banos, Andrew J. Roger,
+Edward Susko, Chris Bielow, Nicola De Maio, Nick Goldman, Matthew W. Hahn,
+Gavin Huttley, Robert Lanfear, Bui Quang Minh (2025)
+IQ-TREE 3: Phylogenomic Inference Software using Complex Evolutionary Models.
+Submitted.
+
+Please also cite the following paper(s) for the feature(s) that you used:
+
+Since you used ultrafast bootstrap (UFBoot) please also cite: 
+
+Diep Thi Hoang, Olga Chernomor, Arndt von Haeseler, Bui Quang Minh,
+and Le Sy Vinh (2018) UFBoot2: Improving the ultrafast bootstrap
+approximation. Mol. Biol. Evol., 35:518–522.
+https://doi.org/10.1093/molbev/msx281
+
+SEQUENCE ALIGNMENT
+------------------
+
+Input data: 23 sequences with 39985 nucleotide sites
+Number of constant sites: 12600 (= 31.5118% of all sites)
+Number of invariant (constant or ambiguous constant) sites: 12600 (= 31.5118% of all sites)
+Number of parsimony informative sites: 20474
+Number of distinct site patterns: 18624
+
+SUBSTITUTION PROCESS
+--------------------
+
+Mixture model of substitution: MIX{GTR+FO,GTR+FO}+I+R3
+
+  No  Component      Rate    Weight   Parameters
+   1  GTR           1.0000   0.5467   GTR{1.31236,2.80438,1.01054,0.957787,1.12596}+FO{0.348376,0.166281,0.246708,0.238635}
+   2  GTR           1.0000   0.4533   GTR{3.43952,4.82751,4.84582,2.5341,18.735}+FO{0.181243,0.182534,0.156539,0.479683}
+
+Model of rate heterogeneity: Invar+FreeRate with 3 categories
+Proportion of invariable sites: 0.1195
+Site proportion and rates:  (0.5168,0.2741) (0.3085,1.3345) (0.0552,8.0914)
+
+ Category  Relative_rate  Proportion
+  0         0              0.1195
+  1         0.2741         0.5168
+  2         1.3345         0.3085
+  3         8.0914         0.0552
+
+MAXIMUM LIKELIHOOD TREE
+-----------------------
+
+Log-likelihood of the tree: -320116.5763 (s.e. 1119.5397)
+Unconstrained log-likelihood (without tree): -328436.9649
+Number of free parameters (#branches + #model parameters): 65
+Akaike information criterion (AIC) score: 640363.1526
+Corrected Akaike information criterion (AICc) score: 640363.3675
+Bayesian information criterion (BIC) score: 640921.9094
+
+Total tree length (sum of branch lengths): 11.2257
+Sum of internal branch lengths: 4.5034 (40.1174% of tree length)
+
+NOTE: Tree is UNROOTED although outgroup taxon 'AY274119.3' is drawn at root
+Numbers in parentheses are  ultrafast bootstrap support (%)
+
++--AY274119.3
+|
+|  +--AY278488.2
++--| (100)
+|  |     +--AY390556.1
+|  |  +--| (86)
+|  |  |  |                                                           +-----AY391777.1
+|  |  |  |                                  +------------------------| (100)
+|  |  |  |                                  |                        +-----NC_006577.2
+|  |  |  |                               +--| (58)
+|  |  |  |                               |  |               +-----NC_009019.1
+|  |  |  |                               |  |            +--| (100)
+|  |  |  |                               |  |            |  +---NC_009020.1
+|  |  |  |                               |  +------------| (100)
+|  |  |  |                               |               +----NC_019843.3
+|  |  |  |                            +--| (93)
+|  |  |  |                            |  +-------------------------------------NC_002645.1
+|  |  |  |              +-------------| (100)
+|  |  |  |              |             +-----------------------EF065513.1
+|  |  |  |           +--| (70)
+|  |  |  |           |  +--NC_014470.1
+|  |  |  |        +--| (100)
+|  |  |  |        |  |     +--MG772933.1
+|  |  |  |        |  |  +--| (100)
+|  |  |  |        |  |  |  +--MG772934.1
+|  |  |  |        |  +--| (100)
+|  |  |  |        |     +--MN975262.1
+|  |  |  |     +--| (100)
+|  |  |  |     |  |     +--FJ588686.1
+|  |  |  |     |  |  +--| (97)
+|  |  |  |     |  |  |  |  +--KY417149.1
+|  |  |  |     |  |  |  +--| (70)
+|  |  |  |     |  |  |     +--MK211378.1
+|  |  |  |     |  +--| (100)
+|  |  |  |     |     +--MK211377.1
+|  |  |  |  +--| (100)
+|  |  |  |  |  |  +--KC881005.1
+|  |  |  |  |  +--| (100)
+|  |  |  |  |     +--KC881006.1
+|  |  |  +--| (100)
+|  |  |     +--KY417146.1
+|  +--| (100)
+|     +--AY515512.1
+|
++--AY278491.2
+
+Tree in newick format:
+
+(AY274119.3:0.0000678837,(AY278488.2:0.0002386007,((AY390556.1:0.0004113644,(((((((((AY391777.1:0.4316720926,NC_006577.2:0.4085513081)100:1.6926553410,((NC_009019.1:0.4194851964,NC_009020.1:0.3322949866)100:0.1496034573,NC_019843.3:0.3837025591)100:0.8945544652)58:0.0889662822,NC_002645.1:2.5865569023)93:0.1821467276,EF065513.1:1.6624186003)100:0.9934267111,NC_014470.1:0.2623249729)70:0.0642969718,((MG772933.1:0.0138468635,MG772934.1:0.0150705059)100:0.0571571931,MN975262.1:0.1266477519)100:0.1754347849)100:0.1190850654,((FJ588686.1:0.0175657017,(KY417149.1:0.0108121454,MK211378.1:0.0096117768)70:0.0015444920)97:0.0053475339,MK211377.1:0.0141485853)100:0.0113375268)100:0.0161997692,(KC881005.1:0.0049998914,KC881006.1:0.0072434209)100:0.0105416688)100:0.0057664228,KY417146.1:0.0119149741)100:0.0344592693)86:0.0002701244,AY515512.1:0.0023289745)100:0.0004779617)100:0.0001695165,AY278491.2:0.0003066530);
+
+CONSENSUS TREE
+--------------
+
+Consensus tree is constructed from 1000 bootstrap trees
+Log-likelihood of consensus tree: -320116.576098
+Robinson-Foulds distance between ML tree and consensus tree: 0
+
+Branches with support >0.000000% are kept (extended consensus)
+Branch lengths are optimized by maximum likelihood on original alignment
+Numbers in parentheses are bootstrap supports (%)
+
++--AY274119.3
+|
+|  +--AY278488.2
++--| (100)
+|  |     +--AY390556.1
+|  |  +--| (86)
+|  |  |  |                                                           +-----AY391777.1
+|  |  |  |                                  +------------------------| (100)
+|  |  |  |                                  |                        +-----NC_006577.2
+|  |  |  |                               +--| (58)
+|  |  |  |                               |  |               +-----NC_009019.1
+|  |  |  |                               |  |            +--| (100)
+|  |  |  |                               |  |            |  +---NC_009020.1
+|  |  |  |                               |  +------------| (100)
+|  |  |  |                               |               +----NC_019843.3
+|  |  |  |                            +--| (93)
+|  |  |  |                            |  +-------------------------------------NC_002645.1
+|  |  |  |              +-------------| (100)
+|  |  |  |              |             +-----------------------EF065513.1
+|  |  |  |           +--| (70)
+|  |  |  |           |  +--NC_014470.1
+|  |  |  |        +--| (100)
+|  |  |  |        |  |     +--MG772933.1
+|  |  |  |        |  |  +--| (100)
+|  |  |  |        |  |  |  +--MG772934.1
+|  |  |  |        |  +--| (100)
+|  |  |  |        |     +--MN975262.1
+|  |  |  |     +--| (100)
+|  |  |  |     |  |     +--FJ588686.1
+|  |  |  |     |  |  +--| (97)
+|  |  |  |     |  |  |  |  +--KY417149.1
+|  |  |  |     |  |  |  +--| (70)
+|  |  |  |     |  |  |     +--MK211378.1
+|  |  |  |     |  +--| (100)
+|  |  |  |     |     +--MK211377.1
+|  |  |  |  +--| (100)
+|  |  |  |  |  |  +--KC881005.1
+|  |  |  |  |  +--| (100)
+|  |  |  |  |     +--KC881006.1
+|  |  |  +--| (100)
+|  |  |     +--KY417146.1
+|  +--| (100)
+|     +--AY515512.1
+|
++--AY278491.2
+
+
+Consensus tree in newick format: 
+
+(AY274119.3:0.0000677317,(AY278488.2:0.0002389008,((AY390556.1:0.0004125552,(((((((((AY391777.1:0.4318459952,NC_006577.2:0.4085905502)100:1.6931776908,((NC_009019.1:0.4195833781,NC_009020.1:0.3323900873)100:0.1494384563,NC_019843.3:0.3839832963)100:0.8949150497)58:0.0888494971,NC_002645.1:2.5871136306)93:0.1820036834,EF065513.1:1.6626586125)100:0.9936376240,NC_014470.1:0.2621633725)70:0.0644557801,((MG772933.1:0.0138467663,MG772934.1:0.0150756644)100:0.0571727739,MN975262.1:0.1266591563)100:0.1754469928)100:0.1191132895,((FJ588686.1:0.0175687218,(KY417149.1:0.0108134114,MK211378.1:0.0096133192)70:0.0015449840)97:0.0053483838,MK211377.1:0.0141501955)100:0.0113343552)100:0.0162057582,(KC881005.1:0.0050007988,KC881006.1:0.0072452594)100:0.0105434063)100:0.0057667155,KY417146.1:0.0119169065)100:0.0344634284)86:0.0002710379,AY515512.1:0.0023301318)100:0.0004785572)100:0.0001702768,AY278491.2:0.0003070375);
+
+ALISIM COMMAND
+--------------
+Currently, we only support exporting AliSim commands automatically from the analysis for common models of DNA, Protein, Binary, and Morphological data. To simulate data from other models (mixture, lie-markov, etc), please refer to the User Manual of AliSim. Thanks!
+
+For more information on using AliSim, please visit: www.iqtree.org/doc/AliSim
+
+TIME STAMP
+----------
+
+Date and time: Thu Jan 29 12:40:05 2026
+Total CPU time used: 1204.28125 seconds (0h:20m:4s)
+Total wall-clock time used: 615.0475381 seconds (0h:10m:15s)
+

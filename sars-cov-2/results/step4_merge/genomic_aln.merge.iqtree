@@ -1,0 +1,252 @@
+IQ-TREE 3.0.1 built May  5 2025
+
+Partition file name: data/genomic_aln.nex
+Input file name: data/genomic_aln.fa
+Type of analysis: ModelFinder + tree reconstruction + ultrafast bootstrap (1000 replicates)
+Random seed number: 443733
+
+REFERENCES
+----------
+
+To cite IQ-TREE 3 please use:
+
+Thomas K.F. Wong, Nhan Ly-Trong, Huaiyan Ren, Hector Banos, Andrew J. Roger,
+Edward Susko, Chris Bielow, Nicola De Maio, Nick Goldman, Matthew W. Hahn,
+Gavin Huttley, Robert Lanfear, Bui Quang Minh (2025)
+IQ-TREE 3: Phylogenomic Inference Software using Complex Evolutionary Models.
+Submitted.
+
+Please also cite the following paper(s) for the feature(s) that you used:
+
+To cite ModelFinder please use: 
+
+Subha Kalyaanamoorthy, Bui Quang Minh, Thomas KF Wong, Arndt von Haeseler,
+and Lars S Jermiin (2017) ModelFinder: Fast model selection for
+accurate phylogenetic estimates. Nature Methods, 14:587–589.
+https://doi.org/10.1038/nmeth.4285
+
+Since you used ultrafast bootstrap (UFBoot) please also cite: 
+
+Diep Thi Hoang, Olga Chernomor, Arndt von Haeseler, Bui Quang Minh,
+and Le Sy Vinh (2018) UFBoot2: Improving the ultrafast bootstrap
+approximation. Mol. Biol. Evol., 35:518–522.
+https://doi.org/10.1093/molbev/msx281
+
+Since you used partition models please also cite:
+
+Olga Chernomor, Arndt von Haeseler, and Bui Quang Minh (2016)
+Terrace aware data structure for phylogenomic inference from
+supermatrices. Syst. Biol., 65:997-1008.
+https://doi.org/10.1093/sysbio/syw037
+
+SEQUENCE ALIGNMENT
+------------------
+
+Input data: 23 taxa with 7 partitions and 37999 total sites (0% missing data)
+
+  ID	Type	Seq	Site	Unique	Infor	Invar	Const	Name
+   1	DNA	23	26483	13457	14982	7381	7381	ORF1ab+M+ORF6+ORF7a
+   2	DNA	23	5810	3629	3131	1575	1575	S
+   3	DNA	23	2201	1059	644	645	645	ORF3a
+   4	DNA	23	261	228	160	41	41	E
+   5	DNA	23	417	152	200	204	204	ORF8
+   6	DNA	23	2267	1173	872	1028	1028	N
+   7	DNA	23	560	113	78	463	463	ORF10
+
+Column meanings:
+  Unique: Number of unique site patterns
+  Infor:  Number of parsimony-informative sites
+  Invar:  Number of invariant sites
+  Const:  Number of constant sites (can be subset of invariant sites)
+
+ModelFinder
+-----------
+
+Best-fit model according to BIC: GTR+F+R3:ORF1ab+M+ORF6+ORF7a,TVM+F+R4:S,TPM2u+F+R2:ORF3a,HKY+F+G4:E,HKY+F+I:ORF8,TPM2u+G4:N,TPM3u+F:ORF10
+
+List of best-fit models per partition:
+
+  ID  Model                  LogL         AIC      w-AIC        AICc     w-AICc         BIC      w-BIC
+   1  GTR+F+R3        -226751.771  453529.541 + -3.56e+190  453529.555 + 9.95e-317  453635.937 + 8.42e-318
+   2  TVM+F+R4         -53741.294  107510.587 + -3.56e+190  107510.660 + 9.95e-317  107603.930 + 8.42e-318
+   3  TPM2u+F+R2       -13499.025   27014.051 + -3.56e+190   27014.117 + 9.95e-317   27059.624 + 8.42e-318
+   4  HKY+F+G4          -2167.500    4346.999 + -3.56e+190    4347.330 + 9.95e-317    4368.387 + 8.42e-318
+   5  HKY+F+I           -1871.157    3754.313 + -3.56e+190    3754.518 + 9.95e-317    3778.512 + 8.42e-318
+   6  TPM2u+G4         -14125.014   28258.028 + -3.56e+190   28258.046 + 9.95e-317   28280.933 + 8.42e-318
+   7  TPM3u+F           -1430.179    2872.358 + -3.56e+190    2872.510 + 9.95e-317    2898.325 + 8.42e-318
+
+AIC, w-AIC   : Akaike information criterion scores and weights.
+AICc, w-AICc : Corrected AIC scores and weights.
+BIC, w-BIC   : Bayesian information criterion scores and weights.
+
+Plus signs denote the 95% confidence sets.
+Minus signs denote significant exclusion.
+
+SUBSTITUTION PROCESS
+--------------------
+
+Edge-linked-proportional partition model with separate substitution models and separate rates across sites
+
+  ID  Model           Speed  Parameters
+   1  GTR+F+R3       0.7455  GTR{2.08929,4.18121,1.77995,1.4755,5.81429}+F{0.280773,0.184737,0.212962,0.321529}+R3{0.266733,0.0670563,0.579308,0.756195,0.153959,3.5337}
+   2  TVM+F+R4       2.2486  TVM{2.83717,5.83011,2.03541,2.06519}+F{0.275809,0.195033,0.189617,0.339541}+R4{0.141677,0.0303246,0.507137,0.233927,0.183112,0.773106,0.168074,4.37608}
+   3  TPM2u+F+R2     1.3116  TPM2u{1.33547,3.43343}+F{0.267974,0.212107,0.188111,0.331808}+R2{0.668102,0.405442,0.331898,2.19683}
+   4  HKY+F+G4       0.4704  HKY{2.15321}+F{0.236053,0.190512,0.192789,0.380645}+G4{3.61606}
+   5  HKY+F+I        1.6428  HKY{2.37009}+F{0.287121,0.188625,0.18807,0.336184}+I{0.177913}
+   6  TPM2u+F+G4     0.5893  TPM2u{1.98121,3.9693}+F{0.306497,0.250025,0.222244,0.221234}+G4{1.54517}
+   7  TPM3u+F        0.2879  TPM3u{0.361466,1.91546}+F{0.287725,0.196368,0.197827,0.31808}
+
+MAXIMUM LIKELIHOOD TREE
+-----------------------
+
+Log-likelihood of the tree: -313553.7551 (s.e. 1099.1423)
+Unconstrained log-likelihood (without tree): -286410.9626
+Number of free parameters (#branches + #model parameters): 102
+Akaike information criterion (AIC) score: 627311.5102
+Corrected Akaike information criterion (AICc) score: 627312.0647
+Bayesian information criterion (BIC) score: 628183.1323
+
+Mixture-based log-likelihood of the tree: -314390.8470
+Marginal Akaike information criterion (mAIC) score: 628985.6940
+
+Total tree length (sum of branch lengths): 7.8694
+Sum of internal branch lengths: 3.1435 (39.9456% of tree length)
+
+NOTE: Tree is UNROOTED although outgroup taxon 'AY274119.3' is drawn at root
+Numbers in parentheses are  ultrafast bootstrap support (%)
+
++--AY274119.3
+|
+|  +--AY278488.2
++--| (100)
+|  |     +--AY390556.1
+|  |  +--| (88)
+|  |  |  |                                                      +------AY391777.1
+|  |  |  |                                +---------------------| (100)
+|  |  |  |                                |                     +-----NC_006577.2
+|  |  |  |                             +--| (92)
+|  |  |  |                             |  |  +---------------------------------NC_002645.1
+|  |  |  |                             |  +--| (63)
+|  |  |  |                             |     |              +------NC_009019.1
+|  |  |  |                             |     |           +--| (100)
+|  |  |  |                             |     |           |  +-----NC_009020.1
+|  |  |  |                             |     +-----------| (100)
+|  |  |  |                             |                 +-----NC_019843.3
+|  |  |  |              +--------------| (100)
+|  |  |  |              |              +-----------------------EF065513.1
+|  |  |  |           +--| (90)
+|  |  |  |           |  +---NC_014470.1
+|  |  |  |        +--| (100)
+|  |  |  |        |  |     +--MG772933.1
+|  |  |  |        |  |  +--| (100)
+|  |  |  |        |  |  |  +--MG772934.1
+|  |  |  |        |  +--| (100)
+|  |  |  |        |     +--MN975262.1
+|  |  |  |     +--| (99)
+|  |  |  |     |  |        +--FJ588686.1
+|  |  |  |     |  |     +--| (63)
+|  |  |  |     |  |     |  +--KY417149.1
+|  |  |  |     |  |  +--| (94)
+|  |  |  |     |  |  |  +--MK211378.1
+|  |  |  |     |  +--| (100)
+|  |  |  |     |     +--MK211377.1
+|  |  |  |  +--| (99)
+|  |  |  |  |  |  +--KC881005.1
+|  |  |  |  |  +--| (100)
+|  |  |  |  |     +--KC881006.1
+|  |  |  +--| (100)
+|  |  |     +--KY417146.1
+|  +--| (100)
+|     +--AY515512.1
+|
++--AY278491.2
+
+Tree in newick format:
+
+(AY274119.3:0.0000738934,(AY278488.2:0.0002579173,((AY390556.1:0.0004327838,((((((((AY391777.1:0.3466561437,NC_006577.2:0.3015350863)100:1.0536779890,(NC_002645.1:1.6109413636,((NC_009019.1:0.3245721284,NC_009020.1:0.2856377032)100:0.1123199383,NC_019843.3:0.3102451990)100:0.5897233629)63:0.0759708761)92:0.1493107372,EF065513.1:1.1099069804)100:0.6924013213,NC_014470.1:0.2121069059)90:0.0682921289,((MG772933.1:0.0140476968,MG772934.1:0.0152873189)100:0.0526878972,MN975262.1:0.1126485541)100:0.1451937505)100:0.1142933352,(((FJ588686.1:0.0180376977,KY417149.1:0.0105806509)63:0.0027900557,MK211378.1:0.0093046952)94:0.0061814634,MK211377.1:0.0148668476)100:0.0121445063)99:0.0160130722,(KC881005.1:0.0054658987,KC881006.1:0.0074479569)100:0.0107441595)99:0.0060013706,KY417146.1:0.0131085964)100:0.0347097280)88:0.0003050074,AY515512.1:0.0023982434)100:0.0005161344)100:0.0001844680,AY278491.2:0.0003308985);
+
+CONSENSUS TREE
+--------------
+
+Consensus tree is constructed from 1000 bootstrap trees
+Log-likelihood of consensus tree: -313553.755053
+Robinson-Foulds distance between ML tree and consensus tree: 0
+
+Branches with support >0.000000% are kept (extended consensus)
+Branch lengths are optimized by maximum likelihood on original alignment
+Numbers in parentheses are bootstrap supports (%)
+
++--AY274119.3
+|
+|  +--AY278488.2
++--| (100)
+|  |     +--AY390556.1
+|  |  +--| (88)
+|  |  |  |                                                      +------AY391777.1
+|  |  |  |                                +---------------------| (100)
+|  |  |  |                                |                     +-----NC_006577.2
+|  |  |  |                             +--| (92)
+|  |  |  |                             |  |  +---------------------------------NC_002645.1
+|  |  |  |                             |  +--| (63)
+|  |  |  |                             |     |              +------NC_009019.1
+|  |  |  |                             |     |           +--| (100)
+|  |  |  |                             |     |           |  +-----NC_009020.1
+|  |  |  |                             |     +-----------| (100)
+|  |  |  |                             |                 +-----NC_019843.3
+|  |  |  |              +--------------| (100)
+|  |  |  |              |              +-----------------------EF065513.1
+|  |  |  |           +--| (90)
+|  |  |  |           |  +---NC_014470.1
+|  |  |  |        +--| (100)
+|  |  |  |        |  |     +--MG772933.1
+|  |  |  |        |  |  +--| (100)
+|  |  |  |        |  |  |  +--MG772934.1
+|  |  |  |        |  +--| (100)
+|  |  |  |        |     +--MN975262.1
+|  |  |  |     +--| (99)
+|  |  |  |     |  |        +--FJ588686.1
+|  |  |  |     |  |     +--| (63)
+|  |  |  |     |  |     |  +--KY417149.1
+|  |  |  |     |  |  +--| (94)
+|  |  |  |     |  |  |  +--MK211378.1
+|  |  |  |     |  +--| (100)
+|  |  |  |     |     +--MK211377.1
+|  |  |  |  +--| (99)
+|  |  |  |  |  |  +--KC881005.1
+|  |  |  |  |  +--| (100)
+|  |  |  |  |     +--KC881006.1
+|  |  |  +--| (100)
+|  |  |     +--KY417146.1
+|  +--| (100)
+|     +--AY515512.1
+|
++--AY278491.2
+
+
+Consensus tree in newick format: 
+
+(AY274119.3:0.0000727635,(AY278488.2:0.0002575874,((AY390556.1:0.0004332667,((((((((AY391777.1:0.3468270246,NC_006577.2:0.3015087343)100:1.0538784260,(NC_002645.1:1.6113175338,((NC_009019.1:0.3246313320,NC_009020.1:0.2856987424)100:0.1122959256,NC_019843.3:0.3103542446)100:0.5897718375)63:0.0759602214)92:0.1492515662,EF065513.1:1.1100317886)100:0.6925136510,NC_014470.1:0.2120598546)90:0.0683434834,((MG772933.1:0.0140483452,MG772934.1:0.0152898358)100:0.0526969703,MN975262.1:0.1126544363)100:0.1452006486)100:0.1143081282,(((FJ588686.1:0.0180393817,KY417149.1:0.0105822838)63:0.0027912011,MK211378.1:0.0093056459)94:0.0061817681,MK211377.1:0.0148685356)100:0.0121438128)99:0.0160153984,(KC881005.1:0.0054668835,KC881006.1:0.0074490916)100:0.0107448935)99:0.0060012784,KY417146.1:0.0131100776)100:0.0347127598)88:0.0003041992,AY515512.1:0.0023996352)100:0.0005154978)100:0.0001838202,AY278491.2:0.0003311083);
+
+ALISIM COMMAND
+--------------
+To simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis, you can use the following command:
+
+--alisim simulated_MSA -t results/step4_merge/genomic_aln.merge.treefile -p results/step4_merge/genomic_aln.merge.best_model.nex
+
+To mimic the alignment used to produce this analysis, i.e. simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis *and* copying the same gap positions as the original alignment, you can use the following command:
+
+iqtree -s data/genomic_aln.fa --alisim mimicked_MSA
+
+To simulate any number of alignments in either of the two commandlines above, use the --num-alignments options, for example mimic 100 alignments you would use the command line:
+
+iqtree -s data/genomic_aln.fa --alisim mimicked_MSA --num-alignments 100
+
+For more information on using AliSim, please visit: www.iqtree.org/doc/AliSim
+
+TIME STAMP
+----------
+
+Date and time: Thu Jan 29 09:50:49 2026
+Total CPU time used: 938.546875 seconds (0h:15m:38s)
+Total wall-clock time used: 569.9071107 seconds (0h:9m:29s)
+
